@@ -12,11 +12,11 @@ def root():
 def keydown(key):
     if key == 'a':
         pican.left()
-    else if key == 'd':
+    elif key == 'd':
         pican.right()
-    else if key == 'w':
+    elif key == 'w':
         pican.forward()
-    else if key == 's':
+    elif key == 's':
         pican.backward()
     return ('', 204)
 
@@ -24,11 +24,11 @@ def keydown(key):
 def keyup(key):
     if key == 'a':
         pican.straight()
-    else if key == 'd':
+    elif key == 'd':
         pican.straight()
-    else if key == 'w':
+    elif key == 'w':
         pican.stop()
-    else if key == 's':
+    elif key == 's':
         pican.stop()
     return ('', 204)
 
