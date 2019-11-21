@@ -4,14 +4,14 @@ class Car:
 
     PIN_LEFT, PIN_RIGHT, PIN_FORWARD, PIN_BACKWARD = 31, 33, 35, 37
 
-    def __init__():
+    def __init__(__self__):
         GPIO.setmode(GPIO.BOARD)
         GPIO.setup(PIN_LEFT, GPIO.OUT)
         GPIO.setup(PIN_RIGHT, GPIO.OUT)
         GPIO.setup(PIN_FORWARD, GPIO.OUT)
         GPIO.setup(PIN_BACKWARD, GPIO.OUT)
 
-    def __del__():
+    def __del__(__self__):
         GPIO.cleanup()
 
     def stop():
