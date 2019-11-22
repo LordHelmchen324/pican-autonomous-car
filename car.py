@@ -14,7 +14,7 @@ class Car:
     def __del__(self):
         GPIO.cleanup()
 
-    def stop(self.):
+    def stop(self):
         GPIO.output(self.PIN_FORWARD, GPIO.LOW)
         GPIO.output(self.PIN_BACKWARD, GPIO.LOW)
 
