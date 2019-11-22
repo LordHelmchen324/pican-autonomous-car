@@ -10,6 +10,8 @@ class Car:
         GPIO.setup(self.PIN_RIGHT, GPIO.OUT)
         GPIO.setup(self.PIN_FORWARDS, GPIO.OUT)
         GPIO.setup(self.PIN_BACKWARDS, GPIO.OUT)
+        self.stop()
+        self.straight()
 
     def __del__(self):
         GPIO.cleanup()
