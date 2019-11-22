@@ -15,9 +15,9 @@ def keydown(key):
     elif key == 'd':
         pican.right()
     elif key == 'w':
-        pican.forward()
+        pican.forwards()
     elif key == 's':
-        pican.backward()
+        pican.backwards()
     return ('', 204)
 
 @app.route('/keyup/<key>', methods=['POST'])
