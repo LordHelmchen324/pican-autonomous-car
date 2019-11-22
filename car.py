@@ -14,26 +14,26 @@ class Car:
     def __del__(self):
         GPIO.cleanup()
 
-    def stop():
-        GPIO.output(fwdPin, GPIO.LOW)
-        GPIO.output(bwdPin, GPIO.LOW)
+    def stop(self.):
+        GPIO.output(self.PIN_FORWARD, GPIO.LOW)
+        GPIO.output(self.PIN_BACKWARD, GPIO.LOW)
 
-    def forwards():
-        GPIO.output(fwdPin, GPIO.HIGH)
-        GPIO.output(bwdPin, GPIO.LOW)
+    def forwards(self):
+        GPIO.output(self.PIN_FORWARD, GPIO.HIGH)
+        GPIO.output(self.PIN_BACKWARD, GPIO.LOW)
 
-    def backwards():
-        GPIO.output(fwdPin, GPIO.LOW)
-        GPIO.output(bwdPin, GPIO.HIGH)
+    def backwards(self):
+        GPIO.output(self.PIN_FORWARD, GPIO.LOW)
+        GPIO.output(self.PIN_BACKWARD, GPIO.HIGH)
 
-    def straight():
-        GPIO.output(lftPin, GPIO.LOW)
-        GPIO.output(rgtPin, GPIO.LOW)
+    def straight(self):
+        GPIO.output(self.PIN_LEFT, GPIO.LOW)
+        GPIO.output(self.PIN_RIGHT, GPIO.LOW)
 
-    def left():
-        GPIO.output(lftPin, GPIO.HIGH)
-        GPIO.output(rgtPin, GPIO.LOW)
+    def left(self):
+        GPIO.output(self.PIN_LEFT, GPIO.HIGH)
+        GPIO.output(self.PIN_RIGHT, GPIO.LOW)
 
-    def right():
-        GPIO.output(lftPin, GPIO.LOW)
-        GPIO.output(rgtPin, GPIO.HIGH)
+    def right(self):
+        GPIO.output(self.PIN_LEFT, GPIO.LOW)
+        GPIO.output(self.PIN_RIGHT, GPIO.HIGH)
